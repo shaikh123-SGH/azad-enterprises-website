@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Request a Quotation | Azad Enterprises Hardware & Plumbing</title>
+    <meta
+      name="description"
+      content="Submit your material list and get a fast, itemised quotation for hardware, plumbing, sanitaryware and building materials."
+    />
+    <meta
+      name="keywords"
+      content="hardware shop Juhu, plumbing materials Mumbai, PVC pipes, CPVC, sanitaryware, bathroom fittings, power tools, building materials, Azad Enterprises"
+    />
+    <meta name="author" content="Azad Enterprises" />
+    <link
+      rel="canonical"
+      href="https://azadenterprises.example.com/quote.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Request a Quotation | Azad Enterprises Hardware & Plumbing"
+    />
+    <meta
+      property="og:description"
+      content="Submit your material list and get a fast, itemised quotation for hardware, plumbing, sanitaryware and building materials."
+    />
+    <meta property="og:image" content="images/hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HardwareStore",
+        "name": "Azad Enterprises",
+        "image": "images/hero.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "Shop": "Shop no.7, N.S. Road no.5",
+          "streetAddress": "Behind Juhu Club Millenium",
+          "addressLocality": "Juhu, Mumbai",
+          "postalCode": "400049",
+          "addressRegion": "MH",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-9892754973",
+        "url": "https://azadenterprises.example.com",
+        "openingHours": "Mon-Sun 09:30-21:30",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "3.5",
+          "reviewCount": "22"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <div class="container">
+          <span>📍 Shop no.7, N.S. Road no.5, Behind Juhu Club Millenium, Juhu, Mumbai - 400049</span>
+          <span
+            >🕒 Mon–Sun: 9:30 AM – 9:30 PM &nbsp; | &nbsp; ✉
+            azadenterprises2@gmail.com</span
+          >
+        </div>
+      </div>
+      <nav class="nav container">
+        <a href="index.html" class="brand">
+          <img src="images/logo.png" alt="Azad Enterprises Logo" />
+          <div>
+            Azad Enterprises<small>HARDWARE &amp; PLUMBING • JUHU</small>
+          </div>
+        </a>
+        <button class="hamburger" aria-label="Menu">☰</button>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quote.html" class="cta">Get Quotation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Request a Quotation</h1>
+        <p>Send us your material list and get a fast, itemised quotation.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / Request Quotation
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <form id="quote-form" class="form" novalidate>
+          <div id="quote-alert" class="alert"></div>
+          <div class="form-row">
+            <div class="field">
+              <label for="q-name">Full Name *</label
+              ><input
+                id="q-name"
+                name="name"
+                type="text"
+                required
+                minlength="2"
+                maxlength="100"
+              />
+            </div>
+            <div class="field">
+              <label for="q-phone">Phone *</label
+              ><input
+                id="q-phone"
+                name="phone"
+                type="tel"
+                required
+                pattern="[0-9 +()-]{7,20}"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="q-email">Email *</label
+              ><input
+                id="q-email"
+                name="email"
+                type="email"
+                required
+                maxlength="120"
+              />
+            </div>
+            <div class="field">
+              <label for="q-company">Company / Project</label
+              ><input
+                id="q-company"
+                name="company"
+                type="text"
+                maxlength="150"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="q-category">Product Category *</label>
+              <select id="q-category" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option>PVC Pipes &amp; Fittings</option>
+                <option>CPVC Pipes &amp; Fittings</option>
+                <option>Plumbing Materials</option>
+                <option>Sanitaryware</option>
+                <option>Bathroom Fittings</option>
+                <option>Hardware Tools</option>
+                <option>Power Tools</option>
+                <option>Nuts, Bolts &amp; Fasteners</option>
+                <option>Building Materials</option>
+                <option>Mixed / Multiple Categories</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="q-location">Delivery Location</label>
+              <input
+                id="q-location"
+                name="location"
+                type="text"
+                placeholder="e.g. Juhu, Andheri, Bandra"
+                maxlength="150"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="q-items">Items / Specifications *</label>
+            <textarea
+              id="q-items"
+              name="items"
+              required
+              minlength="5"
+              maxlength="3000"
+              placeholder='List the products, sizes, brands and quantities you need. Example:&#10;- CPVC pipe 3/4" - 50 m (Astral)&#10;- PVC elbow 1" - 30 nos&#10;- Wash basin (any white) - 2 nos'
+            ></textarea>
+          </div>
+          <div class="field">
+            <label for="q-notes">Additional Notes</label>
+            <textarea
+              id="q-notes"
+              name="notes"
+              maxlength="1000"
+              placeholder="Timeline, budget, brand preferences, etc."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">
+            Submit Quotation Request
+          </button>
+          <p class="form-note">
+            Or send your list directly on
+            <a href="https://wa.me/919892754973">WhatsApp</a> for instant
+            response.
+          </p>
+        </form>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4>Azad Enterprises</h4>
+            <p style="font-size: 14px; line-height: 1.7">
+              Trusted hardware &amp; plumbing materials supplier in Juhu,
+              Mumbai. 10+ years of serving contractors, plumbers, builders and
+              homeowners with quality products at fair prices.
+            </p>
+            <div class="social">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Instagram">ig</a>
+              <a href="https://wa.me/919892754973" aria-label="WhatsApp">wa</a>
+              <a href="#" aria-label="YouTube">yt</a>
+            </div>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="quote.html">Request Quotation</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="products.html">PVC &amp; CPVC Pipes</a></li>
+              <li><a href="products.html">Plumbing Materials</a></li>
+              <li><a href="products.html">Sanitaryware</a></li>
+              <li><a href="products.html">Bathroom Fittings</a></li>
+              <li><a href="products.html">Hardware &amp; Power Tools</a></li>
+              <li><a href="products.html">Building Materials</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Get In Touch</h4>
+            <ul>
+              <li>📍 Shop no.7, N.S. Road no.5, Behind Juhu Club Millenium, Juhu, Mumbai - 400049</li>
+              <li>📞 <a href="tel:+919892754973">+91 9892754973</a></li>
+              <li>💬 <a href="https://wa.me/919892754973">WhatsApp Chat</a></li>
+              <li>
+                ✉
+                <a href="mailto:azadenterprises2@gmail.com"
+                  >azadenterprises2@gmail.com</a
+                >
+              </li>
+              <li>🕒 Open until 9:30 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          © <span id="year"></span> Azad Enterprises, Juhu Mumbai. All rights
+          reserved.
+        </div>
+      </div>
+    </footer>
+    <div class="floating">
+      <a
+        href="https://wa.me/919892754973?text=Hi%20Azad%20Enterprises,%20I%20would%20like%20to%20enquire%20about%20your%20products."
+        class="fab-wa"
+        aria-label="WhatsApp"
+        >💬</a
+      >
+      <a href="tel:+919892754973" class="fab-call" aria-label="Call">📞</a>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
